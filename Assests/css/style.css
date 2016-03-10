@@ -1,9 +1,6 @@
 body {
   background: #ffffff;
 }
-.test {
-  display: block !important;
-}
 .spin-loader {
   display: -webkit-box;
   display: -webkit-flex;

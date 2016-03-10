@@ -15,11 +15,11 @@
 
 $('.cv-container').hide();
 
-$('.spinner').show();
+$('.spin-loader').show();
 
 // Timeout function to fade out container and hide the loader
 
 setTimeout(function(){
-	$('.spinner').hide();
+	$('.spin-loader').hide();
 	$(".cv-container").fadeIn(600); 
 }, 2000)
