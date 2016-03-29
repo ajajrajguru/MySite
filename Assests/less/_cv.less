@@ -48,6 +48,7 @@
 
 
 .profile-info{
+	overflow: hidden;
 	// PROFILE PIC
 	.profile-pic{
 		position: relative;
@@ -58,6 +59,36 @@
 			padding: 15px;
 		    color: @white;
 		    text-shadow: 1px 1px 1px @black;
+		}
+		.floating-btn{
+			position: absolute;
+		    right: 3%;
+		    bottom: -6%;
+		    -webkit-transform: translateX(-50%);
+    		transform: translateX(-50%);
+    		border-radius: 50%;
+		    cursor: default;
+		    width: 20px;
+		    	.transition(width 1s ease, height 1s ease, border-radius 0.4s ease, top 0.9s ease, left 0.9s ease);
+  			i{
+  				transition: all 1s ease-in-out;
+  				cursor: pointer;
+  			}
+		    &.active{
+			    width: 270%;
+			    height: 250%;
+      			left: 50%;
+      			top: -20%;
+			    background: #f44336;
+			    i{
+			    	left: 64%;
+    				top: 36%;
+    				transform: rotate(45deg);
+			    }
+		    }
+		    &:hover,&:active{
+		    	background: #f44336;
+		    }
 		}
 	}
 	// THOUGHTS

@@ -23,3 +23,12 @@ setTimeout(function(){
 	$('.spin-loader').hide();
 	$(".cv-container").fadeIn(600); 
 }, 2000)
+
+
+// ---------------------------
+// FAB CLICK ANIMATION FOR PROFILE-----------
+// ---------------------------
+
+$('.floating-btn .is-open').click(function(){
+	$('.floating-btn').toggleClass('active');
+});

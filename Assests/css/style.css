@@ -58,6 +58,9 @@ lesshat-selector {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.profile-info {
+  overflow: hidden;
+}
 .profile-info .profile-pic {
   position: relative;
   margin: -19px;
@@ -68,6 +71,42 @@ lesshat-selector {
   padding: 15px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000000;
+}
+.profile-info .profile-pic .floating-btn {
+  position: absolute;
+  right: 3%;
+  bottom: -6%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  border-radius: 50%;
+  cursor: default;
+  width: 20px;
+  -webkit-transition: width 1s ease, height 1s ease, border-radius 0.4s ease, top 0.9s ease, left 0.9s ease;
+          transition: width 1s ease, height 1s ease, border-radius 0.4s ease, top 0.9s ease, left 0.9s ease;
+}
+.profile-info .profile-pic .floating-btn i {
+  -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.profile-info .profile-pic .floating-btn.active {
+  width: 270%;
+  height: 250%;
+  left: 50%;
+  top: -20%;
+  background: #f44336;
+}
+.profile-info .profile-pic .floating-btn.active i {
+  left: 64%;
+  top: 36%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.profile-info .profile-pic .floating-btn:hover,
+.profile-info .profile-pic .floating-btn:active {
+  background: #f44336;
 }
 .profile-info .thoughts {
   padding-top: 40px;
