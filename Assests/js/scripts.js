@@ -12,12 +12,13 @@
 // LOADER ON PAGE LOAD AND FADE CONTENT-----------
 // ---------------------------
 
-
 $('.cv-container').hide();
 
 $('.spin-loader').show();
 
-// Timeout function to fade out container and hide the loader
+// ---------------------------
+// TIMEOUT FUNCTION TO FADE OUT CONTAINER AND HIDE THE LOADER-----------
+// ---------------------------
 
 setTimeout(function(){
 	$('.spin-loader').hide();
@@ -25,10 +26,25 @@ setTimeout(function(){
 }, 2000)
 
 
+$(function(){
+
+// ---------------------------
+// TRIGERRING RIPPLE EFFECT FOR MATERIAL DESIGN-----------
+// ---------------------------
+
+$.material.init()
+
 // ---------------------------
 // FAB CLICK ANIMATION FOR PROFILE-----------
 // ---------------------------
 
 $('.floating-btn .is-open').click(function(){
 	$('.floating-btn').toggleClass('active');
+	$('.temp-content').toggleClass('temp-is-shown');
 });
+
+
+});
+
+
+

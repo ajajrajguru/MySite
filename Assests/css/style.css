@@ -1,6 +1,12 @@
 body {
   background: #ffffff;
 }
+.text-shadow-black {
+  text-shadow: 1px 0px 1px #000;
+}
+.text-shadow-white {
+  text-shadow: 1px 0px 1px #000;
+}
 .spin-loader {
   display: -webkit-box;
   display: -webkit-flex;
@@ -74,14 +80,15 @@ lesshat-selector {
 }
 .profile-info .profile-pic .floating-btn {
   position: absolute;
-  right: 3%;
-  bottom: -6%;
+  left: 85%;
+  top: 93%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   border-radius: 50%;
   cursor: default;
   width: 20px;
+  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition: width 1s ease, height 1s ease, border-radius 0.4s ease, top 0.9s ease, left 0.9s ease;
           transition: width 1s ease, height 1s ease, border-radius 0.4s ease, top 0.9s ease, left 0.9s ease;
 }
@@ -99,7 +106,7 @@ lesshat-selector {
 }
 .profile-info .profile-pic .floating-btn.active i {
   left: 64%;
-  top: 36%;
+  top: 10%;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -114,5 +121,25 @@ lesshat-selector {
 .profile-info .thoughts h4 {
   margin: 0;
   line-height: 1.4;
+}
+.temp-content {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  width: calc(100% - 30px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 5px 20px;
+  margin-top: 38px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.temp-content.temp-is-shown {
+  opacity: 1;
+  -webkit-transition: .3s .9s ease;
+          transition: .3s .9s ease;
 }
 /*# sourceMappingURL=style.css.map */
