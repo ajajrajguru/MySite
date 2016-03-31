@@ -1,0 +1,31 @@
+{
+  "name": "AJ Site",
+  "homepage": "https://github.com/ajajrajguru/MySite",
+  "authors": [
+    "Ajaj Rajguru <ajaj@ajency.in>"
+  ],
+  "description": "Personal Site",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Plugins"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.8"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
+  }
+}
